@@ -1,9 +1,12 @@
 import styles from "./navbar.module.scss";
 // import Image from "../../../common/media/images/navbar.png";
 // import Image from "../../../common/media/images/navbar2.png";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import IconMenu from "../../../common/media/icon/burger-bar (1).png";
 export const Navbar = () => {
+  const navigate = useNavigate();
+  const handleClick = () => navigate("/sports");
+
   return (
     <div className={styles.container}>
       {/* <img alt="navbar" src={Image} /> */}
@@ -15,7 +18,7 @@ export const Navbar = () => {
             </Link>
           </li>
           <li className={styles.item}>
-            <Link className={styles.link} to="/">
+            <Link className={styles.link} onClick={handleClick} to="/sports">
               SPORTS
             </Link>
           </li>

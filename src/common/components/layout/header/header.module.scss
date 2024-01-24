@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  //   justify-content: space-between;
+  width: 100%;
+
+  .images {
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    gap: 5px;
+  }
+
+  .share {
+    display: flex;
+    align-items: center;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 289px;
+
+    :nth-child(1) {
+      margin-right: 10px;
+    }
+
+    span {
+      border-radius: 15px;
+      background-color: rgb(5, 2, 8);
+      color: rgb(238, 238, 238);
+      margin-left: 10px;
+      width: 80px;
+      height: 50px;
+      align-items: center;
+      display: flex;
+      font-size: 16px;
+      font-weight: 600;
+      justify-content: center;
+    }
+  }
+}

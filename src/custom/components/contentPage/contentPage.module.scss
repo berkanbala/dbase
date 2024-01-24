@@ -1,0 +1,99 @@
+.container {
+  padding: 0px 50px;
+  margin-bottom: 10px;
+  position: relative;
+
+  .mySwiper {
+    padding: 30px 50px;
+  }
+
+  .caption {
+    display: flex;
+    .details {
+      margin-top: 10px;
+      span {
+        display: flex;
+        // width: auto;
+        height: 25px;
+        border-radius: 15px;
+        background-color: rgb(5, 2, 8);
+        color: rgb(238, 238, 238);
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+  .slots {
+    margin-top: 5px;
+    .title {
+      display: flex;
+      color: #fff;
+      font-size: 30px;
+      font-weight: 800;
+      margin-bottom: 10px;
+      background-color: black;
+      justify-content: space-between;
+
+      h1 {
+        background-color: black;
+      }
+
+      span {
+        background-color: black;
+        align-items: center;
+        display: flex;
+      }
+    }
+    .slotsDetail {
+      display: grid;
+      grid-template-columns: repeat(6, 224px);
+      grid-gap: 10px;
+      justify-items: center;
+      justify-content: space-evenly;
+
+      .slotsCard {
+        background-color: black;
+      }
+    }
+  }
+
+  .jackPots {
+    margin-top: 10px;
+    margin-right: 25px;
+  }
+
+  .liveGame {
+    margin-top: 5px;
+
+    .title {
+      display: flex;
+      color: #fff;
+      font-size: 30px;
+      font-weight: 800;
+      margin-bottom: 10px;
+      background-color: black;
+      justify-content: space-between;
+
+      h1 {
+        background-color: black;
+      }
+
+      span {
+        background-color: black;
+        align-items: center;
+        display: flex;
+      }
+    }
+    .liveGameDetail {
+      display: grid;
+      grid-template-columns: repeat(6, 228px);
+      grid-gap: 9px;
+      justify-items: center;
+      justify-content: space-evenly;
+
+      .liveGameCard {
+        background-color: black;
+      }
+    }
+  }
+}

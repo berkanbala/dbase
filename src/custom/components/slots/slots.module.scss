@@ -1,0 +1,44 @@
+.slots {
+  margin-top: 5px;
+  .title {
+    display: flex;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    background-color: black;
+    align-items: center;
+    .detail {
+      display: flex;
+      h1 {
+        background-color: black;
+      }
+
+      span {
+        background-color: black;
+        align-items: center;
+        display: flex;
+      }
+    }
+  }
+  .slotsDetail {
+    display: grid;
+    grid-template-columns: repeat(6, 224px);
+    grid-gap: 10px;
+    justify-items: center;
+    justify-content: space-evenly;
+
+    .slotsCard {
+      background-color: black;
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 1000px) {
+}

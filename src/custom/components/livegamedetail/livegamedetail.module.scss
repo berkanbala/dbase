@@ -1,0 +1,52 @@
+.liveGame {
+  margin-top: 5px;
+
+  .title {
+    display: flex;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+      background-color: black;
+    }
+
+    .detail {
+      display: flex;
+      justify-content: space-between;
+      h1 {
+        background-color: black;
+      }
+      span {
+        background-color: black;
+      }
+    }
+  }
+  .liveGameDetail {
+    display: grid;
+    grid-template-columns: repeat(6, 228px);
+    grid-gap: 25px;
+    justify-items: center;
+    justify-content: space-evenly;
+
+    .liveGameCard {
+      background-color: black;
+
+      img {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 1000px) {
+}

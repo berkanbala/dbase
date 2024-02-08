@@ -1,0 +1,30 @@
+.caption {
+  display: flex;
+  width: 100%;
+
+  .mySwiper {
+    padding: 30px 50px;
+  }
+
+  .details {
+    margin-top: 10px;
+    span {
+      display: flex;
+      height: 25px;
+      border-radius: 15px;
+      background-color: rgb(5, 2, 8);
+      color: rgb(238, 238, 238);
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 1000px) {
+}

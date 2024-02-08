@@ -35,6 +35,11 @@
           background-color: rgb(5, 2, 8);
           align-items: center;
           display: flex;
+
+          .toggle {
+            display: none;
+            color: #acacac;
+          }
         }
         span {
           background-color: rgb(5, 2, 8);

@@ -1,11 +1,29 @@
 .container {
+  display: flex;
+  justify-content: center;
+  .images {
+    width: 1400px;
+    height: 400px;
+  }
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1500px) {
+  .images {
+    width: 1400 px;
+    height: 400px;
+  }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
+  .images {
+    width: 1200;
+    height: 400px;
+  }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
+  .images {
+    width: 1000;
+    height: 400px;
+  }
 }

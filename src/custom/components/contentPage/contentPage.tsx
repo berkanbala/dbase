@@ -1,22 +1,15 @@
 import styles from "./contentPage.module.scss";
 import Image1 from "../../../common/media/images/mbappe.png";
-// import Image2 from "../../../common/media/images/slider.png";
-// import Image3 from "../../../common/media/images/filter.png";
-// import Image4 from "../../../common/media/images/slots.png";
 import Image5 from "../../../common/media/images/jackpots.png";
-// import Image6 from "../../../common/media/images/livegames.png";
-// import Image7 from "../../../common/media/icon/left-arrow.png";
-// import Image8 from "../../../common/media/icon/right-arrow.png";
 import Image9 from "../../../common/media/icon/trophy.png";
 import Image10 from "../../../common/media/icon/star.png";
-// import { slider } from "../../../common/shared/slider/slider";
+import Purple from "../../../common/media/images/Rectangle2.png";
+import Red from "../../../common/media/images/Rectangle1.png";
+import { slots } from "../../../common/shared/slots/slots";
+import { Filters } from "../filter/filter";
+import { liveGames } from "../../../common/shared/liveGames/liveGames";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
-import Red from "../../../common/media/images/Rectangle1.png";
-import Purple from "../../../common/media/images/Rectangle2.png";
-import { slots } from "../../../common/shared/slots/slots";
-import { liveGames } from "../../../common/shared/liveGames/liveGames";
-import { Filters } from "../filter/filter";
 
 import "swiper/scss";
 import "swiper/scss/scrollbar";
@@ -32,7 +25,6 @@ export const ContentPage = () => {
         <div className={styles.caption}>
           <Swiper
             modules={[Navigation, Pagination, Scrollbar, A11y]}
-            // navigation={true}
             className={styles.mySwiper}
             spaceBetween={50}
             slidesPerView={3}
@@ -131,10 +123,6 @@ export const ContentPage = () => {
               <span>Show All </span>
             </div>
           </div>
-          {/* <div className={styles.icons}>
-            <img src={Image7} alt="" width={30} height={30} />
-            <img src={Image8} alt="" width={30} height={30} />
-          </div> */}
           <div className={styles.liveGameDetail}>
             {liveGames.map((item: any) => (
               <div className={styles.liveGameCard} key={item.id}>

@@ -8,7 +8,6 @@ export const Button = (props: any) => {
     <button
       onClick={onClick}
       className={classNames(styles.container, className, styles[className])}
-      // className={styles.container}
       disabled={disabled}
       type={type}
     >

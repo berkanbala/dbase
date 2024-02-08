@@ -1,6 +1,6 @@
 import styles from "./navbar.module.scss";
-import { Link, useNavigate } from "react-router-dom";
 import IconMenu from "../../../common/media/icon/burger-bar (1).png";
+import { Link, useNavigate } from "react-router-dom";
 export const Navbar = () => {
   const navigate = useNavigate();
   const handleClick = () => navigate("/sports");
@@ -65,24 +65,13 @@ export const Navbar = () => {
               <img src={IconMenu} alt="icon" width={30} height={30} />
             </div>
           </li>
-          {/* <li className={styles.item}>
-            <Link className={styles.link} to="/">
-              BONUS
-            </Link>
-          </li> */}
-        </ul>
-      </div>
-
-      {/* <div className={styles.caption}>
-        <img src={IconMenu} alt="icon" width={50} height={50} />
-        <div className={styles.bonus}>
           <li className={styles.item}>
             <Link className={styles.link} to="/">
               BONUS
             </Link>
           </li>
-        </div>
-      </div> */}
+        </ul>
+      </div>
     </div>
   );
 };

@@ -1,5 +1,15 @@
 .container {
+  background-color: #000000;
+
   button {
     background-color: orange;
+  }
+}
+
+@media (max-width: 1400px) {
+  .container {
+    button {
+      width: 90px;
+    }
   }
 }

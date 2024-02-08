@@ -1,28 +1,74 @@
 .container {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  //   justify-content: space-between;
   width: 100%;
-  justify-content: center;
+  height: 80px;
+  padding-left: 5px;
+  padding-top: 5px;
+  background-color: #000000;
+  justify-content: space-between;
 
   .images {
+    width: 777px;
     display: flex;
     flex-direction: row;
     cursor: pointer;
     gap: 5px;
-  }
+    background-color: #000000;
 
-  .share {
-    display: flex;
-    align-items: center;
+    img {
+      margin-top: 6px;
+    }
+
+    .socials {
+      width: 480px;
+      display: flex;
+      flex-direction: row;
+      margin-left: 40px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      gap: 15px;
+      background-color: #000000;
+      align-items: center;
+      // justify-content: space-between;
+
+      img {
+        background-color: rgb(29 30 65 / 65%);
+        padding: 15px;
+        border-radius: 10%;
+        cursor: pointer;
+      }
+
+      .share {
+        display: flex;
+        align-items: center;
+        background-color: #000000;
+        margin-bottom: 2px;
+        margin-left: 10px;
+
+        button {
+          background-color: rgb(29 30 65 / 65%);
+          margin-right: 10px;
+        }
+
+        img {
+          display: flex;
+          border-style: dashed;
+          border-color: grey;
+          background-color: rgb(29 30 65 / 65%);
+          padding: 15px;
+          cursor: pointer;
+          margin-bottom: 5px;
+        }
+      }
+    }
   }
 
   .content {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-left: 289px;
+    background-color: #000000;
 
     :nth-child(1) {
       margin-right: 10px;
@@ -40,6 +86,38 @@
       font-size: 16px;
       font-weight: 600;
       justify-content: center;
+      padding: 10px;
+      cursor: pointer;
+
+      &:last-child {
+        background-color: rgb(29 30 65 / 65%);
+        padding: 0;
+      }
+    }
+
+    img {
+      background-color: rgb(29 30 65 / 65%);
+      padding: 15px;
+      border-radius: 10%;
+      cursor: pointer;
+    }
+  }
+}
+@media (max-width: 1400px) {
+  .container {
+    .images {
+      .socials {
+        margin-left: 10px;
+        gap: 8px;
+        .share {
+          button {
+            width: 100px;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    .content {
     }
   }
 }

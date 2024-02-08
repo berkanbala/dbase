@@ -1,11 +1,15 @@
 import styles from "./contentPage.module.scss";
 import Image1 from "../../../common/media/images/mbappe.png";
-import Image2 from "../../../common/media/images/slider.png";
-import Image3 from "../../../common/media/images/filter.png";
-import Image4 from "../../../common/media/images/slots.png";
+// import Image2 from "../../../common/media/images/slider.png";
+// import Image3 from "../../../common/media/images/filter.png";
+// import Image4 from "../../../common/media/images/slots.png";
 import Image5 from "../../../common/media/images/jackpots.png";
-import Image6 from "../../../common/media/images/livegames.png";
-import { slider } from "../../../common/shared/slider/slider";
+// import Image6 from "../../../common/media/images/livegames.png";
+// import Image7 from "../../../common/media/icon/left-arrow.png";
+// import Image8 from "../../../common/media/icon/right-arrow.png";
+import Image9 from "../../../common/media/icon/trophy.png";
+import Image10 from "../../../common/media/icon/star.png";
+// import { slider } from "../../../common/shared/slider/slider";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 import Red from "../../../common/media/images/Rectangle1.png";
@@ -24,11 +28,11 @@ export const ContentPage = () => {
   return (
     <div className={styles.container}>
       <div className={styles.images}>
-        <img alt="mbape" src={Image1} width={1420} height={400} />
+        <img alt="mbape" src={Image1} width={1517} height={400} />
         <div className={styles.caption}>
           <Swiper
             modules={[Navigation, Pagination, Scrollbar, A11y]}
-            navigation={true}
+            // navigation={true}
             className={styles.mySwiper}
             spaceBetween={50}
             slidesPerView={3}
@@ -92,8 +96,11 @@ export const ContentPage = () => {
         <Filters />
         <div className={styles.slots}>
           <div className={styles.title}>
-            <h1>Popular Slots </h1>
-            <span>Show All </span>
+            <img src={Image10} alt="" />
+            <div className={styles.detail}>
+              <h1>Popular Slots </h1>
+              <span>Show All </span>
+            </div>
           </div>
 
           <div className={styles.slotsDetail}>
@@ -112,15 +119,22 @@ export const ContentPage = () => {
         <img
           alt="jackpots"
           src={Image5}
-          width={1420}
+          width={1517}
           height={175}
           className={styles.jackPots}
         />
         <div className={styles.liveGame}>
           <div className={styles.title}>
-            <h1>Popular Live Games </h1>
-            <span>Show All </span>
+            <img src={Image9} alt="" width={30} height={30} />
+            <div className={styles.detail}>
+              <h1>Popular Live Games </h1>
+              <span>Show All </span>
+            </div>
           </div>
+          {/* <div className={styles.icons}>
+            <img src={Image7} alt="" width={30} height={30} />
+            <img src={Image8} alt="" width={30} height={30} />
+          </div> */}
           <div className={styles.liveGameDetail}>
             {liveGames.map((item: any) => (
               <div className={styles.liveGameCard} key={item.id}>

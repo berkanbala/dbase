@@ -1,10 +1,11 @@
 .container {
   width: 100%;
-  justify-content: center;
-  margin-top: 5px;
   display: flex;
+  flex-direction: row;
 
   .menu {
+    display: flex;
+    flex-direction: row;
     position: relative;
     list-style-type: none;
     margin: 0;
@@ -13,22 +14,38 @@
     color: rgb(238, 238, 238);
 
     ul {
-      margin-left: -32px;
-    }
+      display: flex;
+      flex-direction: row;
+      margin: 0;
+      padding: 0;
 
-    .item {
-      display: inline-flex;
-      background-color: rgb(5, 2, 8);
-      .link {
-        display: block;
+      .item {
+        display: flex;
+        flex-direction: row;
         background-color: rgb(5, 2, 8);
-        color: white;
-        text-align: center;
-        padding: 16px;
-        margin-right: 39px;
+        .link {
+          display: flex;
+          background-color: rgb(5, 2, 8);
+          color: white;
+          text-align: center;
+          padding: 15px;
+          margin-right: 39px;
+        }
+        .hamburger {
+          background-color: rgb(5, 2, 8);
+          align-items: center;
+          display: flex;
+        }
+        span {
+          background-color: rgb(5, 2, 8);
+        }
+        img {
+          background-color: rgb(5, 2, 8);
+        }
       }
     }
   }
+
   .caption {
     display: flex;
     .bonus {

@@ -1,6 +1,4 @@
 import styles from "./navbar.module.scss";
-// import Image from "../../../common/media/images/navbar.png";
-// import Image from "../../../common/media/images/navbar2.png";
 import { Link, useNavigate } from "react-router-dom";
 import IconMenu from "../../../common/media/icon/burger-bar (1).png";
 export const Navbar = () => {
@@ -9,7 +7,6 @@ export const Navbar = () => {
 
   return (
     <div className={styles.container}>
-      {/* <img alt="navbar" src={Image} /> */}
       <div className={styles.menu}>
         <ul>
           <li className={styles.item}>
@@ -62,10 +59,21 @@ export const Navbar = () => {
               AVIATOR
             </Link>
           </li>
+          <li className={styles.item}>
+            <div className={styles.hamburger}>
+              <span>+5</span>
+              <img src={IconMenu} alt="icon" width={30} height={30} />
+            </div>
+          </li>
+          {/* <li className={styles.item}>
+            <Link className={styles.link} to="/">
+              BONUS
+            </Link>
+          </li> */}
         </ul>
       </div>
 
-      <div className={styles.caption}>
+      {/* <div className={styles.caption}>
         <img src={IconMenu} alt="icon" width={50} height={50} />
         <div className={styles.bonus}>
           <li className={styles.item}>
@@ -74,7 +82,7 @@ export const Navbar = () => {
             </Link>
           </li>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
